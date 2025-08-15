@@ -1,2 +1,3 @@
-# jules-template
-jules template
+# {PROJECT NAME}
+
+{PROJECT CONTENT}
