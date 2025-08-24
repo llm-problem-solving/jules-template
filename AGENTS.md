@@ -21,6 +21,8 @@ The primary purpose of this agent is to assist with the initial setup of the pro
 * **Placeholder Replacement**: The agent should specifically target and replace placeholder text such as \> This document... with the generated, detailed content.  
 * **No Hallucination**: The agent must not generate requirements or tech stack items that are not directly or indirectly suggested by the README.md content.  
 * **Vertical Slicing**: The agent should consider the "vertical slice" approach mentioned in tasks/README.md when organizing and structuring the generated content for clarity and modularity.
+* **Unit Testing Setup**: Once the entire technology stack has been established, the agent must set up unit testing for the project.  
+* **Basic CI Configuration**: The agent must also configure a basic continuous integration (CI) pipeline according to the predefined GitHub Workflows definitions.  
 
 ## **The Architecture and Progress Tracker Agent**
 
