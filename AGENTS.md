@@ -41,3 +41,21 @@ This agent is responsible for creating and maintaining the ARCHITECTURE.md file,
 * **Mermaid Syntax**: The agent must adhere strictly to Mermaid syntax for generating the diagrams.  
 * **Visual Representation**: Dotted vs. solid lines must be used consistently to differentiate between planned and implemented elements.  
 * **Trigger**: The agent's update process should be triggered by the completion of a specific task or a milestone within the project.
+
+## **The Human-Confirmation Agent**
+
+### **Purpose**
+
+This agent ensures that when uncertainty or risk arises during automation, a human confirmation process is initiated and properly tracked.
+
+### **Roles and Responsibilities**
+
+* **Detection of Human-Confirmation Scenarios**: The agent must detect when a decision or action requires explicit human approval.  
+* **Problem Documentation**: Upon detection, the agent must immediately create a new `.md` file in the `problem` directory, describing the issue and context.  
+* **Branch Creation**: Without waiting in the chat interface, the agent must create a new branch containing the added `.md` file for human review.  
+
+### **Constraints and Guidelines**
+
+* **Non-Blocking**: The agent must not halt or linger in interactive dialogs; it should proceed automatically with file creation and branching.  
+* **Traceability**: Every `.md` file created must include sufficient context for humans to understand the issue and make a decision.  
+* **Consistency**: The naming convention for problem files and branches should follow the project’s version control guidelines.  
