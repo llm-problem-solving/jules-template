@@ -1,6 +1,7 @@
 # **Workromancer Store**
 
 > AGENT MUST NOT EDIT THIS README.md
+> AGENT MUST NOT WORK IN THIS DIRECTORY
 
 This repository contains the necessary assets and information for listing an application on the [Workromancer Store](https://workromancer.ai/store).
 
@@ -46,6 +47,11 @@ This YAML file contains the core metadata for your application listing.
   name: Workromancer  
   description: This is the store for what you want.  
   category: app
+  os_requirements:
+    - mac
+    - window
+    - iPadOS
+    - Android
 
 ### **3\. app\_logo.png**
 
